@@ -1,12 +1,12 @@
 # Song Transcriber
 
-An iOS app that records songs and transcribes their lyrics using Google's Gemini 2.0 Flash model.
+An iOS app that records songs and transcribes their lyrics using Google's Gemini 3 Flash model.
 
 ## Features
 
 - 🎤 **Audio Recording**: Record songs with a beautiful, intuitive interface
 - 🌍 **Multi-language Support**: Transcribe songs in 11 different languages
-- 🤖 **AI-Powered Transcription**: Uses Gemini 2.0 Flash for accurate lyrics transcription
+- 🤖 **AI-Powered Transcription**: Uses Gemini 3 Flash for accurate lyrics transcription
 - 📚 **Song Journal**: Save all your transcribed songs with automatic title detection
 - 🏷️ **Tags & Notes**: Add custom tags and personal notes to each song as memory markers
 - 🔍 **Powerful Search**: Search songs by title, lyrics, tags, or notes
@@ -134,11 +134,11 @@ On first launch, the app will request microphone permission. Grant access to ena
 - **@Observable**: New observation framework for better performance
 - **Async/Await**: Modern Swift concurrency for API calls
 - **AVAudioRecorder**: High-quality audio recording with AAC compression
-- **Gemini 2.0 Flash**: Fast, accurate AI transcription with multimodal support
+- **Gemini 3 Flash**: Fast, accurate AI transcription with multimodal support
 
 ### API Integration
 
-The app uses Google's Gemini 2.0 Flash model through the Generative Language API:
+The app uses Google's Gemini 3 Flash model through the Generative Language API:
 
 1. **File Upload**: Audio files are uploaded to Gemini's file API
 2. **Transcription**: The file URI is sent to the model with a prompt
@@ -231,7 +231,7 @@ MIT License - feel free to use this code for learning or personal projects.
 ## Acknowledgments
 
 - Built with SwiftUI and SwiftData
-- Powered by Google Gemini 2.0 Flash
+- Powered by Google Gemini 3 Flash
 - Icons from SF Symbols
 - Inspired by the need to capture and preserve song lyrics
 

@@ -38,7 +38,7 @@ class GeminiAPIService {
         // Step 1: Upload the audio file
         let fileURI = try await uploadFile(audioURL: audioURL)
 
-        // Step 2: Request transcription using Gemini Flash
+        // Step 2: Request transcription using Gemini 3 Flash
         let transcription = try await requestTranscription(fileURI: fileURI, language: language)
 
         return transcription
@@ -85,7 +85,7 @@ class GeminiAPIService {
     }
 
     private func requestTranscription(fileURI: String, language: String) async throws -> TranscriptionResult {
-        guard let url = URL(string: "\(baseURL)/models/gemini-2.0-flash-exp:generateContent?key=\(apiKey)") else {
+        guard let url = URL(string: "\(baseURL)/models/gemini-3-flash:generateContent?key=\(apiKey)") else {
             throw GeminiAPIError.invalidURL
         }
 
